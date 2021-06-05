@@ -34,7 +34,6 @@ namespace QuanLyDuongPho1.Controller
 
         public void Hienthi()
         {
-            // thằng này được rồi này update thì sai cả model rồi nên tự làm lại đi tý fix tiếp
             var listDuongPho = _duongPho.FindAll();
             for (var i = 0; i < listDuongPho.Count; i++)
             {
@@ -47,7 +46,7 @@ namespace QuanLyDuongPho1.Controller
         public void SuaThongTinduongpho()
         {
             Console.WriteLine(
-                "Vui lòng nhập mã duong pho cần sửa: "); // thằng này sai xem lại video của thầy hoặc thằng sinhviendbmodel 
+                "Vui lòng nhập mã duong pho cần sửa: ");
             var ma = Console.ReadLine();
             DuongPho duongPho1 = null;
             for (int i = 0; i < _duongPhos.Count; i++)
@@ -93,7 +92,7 @@ namespace QuanLyDuongPho1.Controller
 
         public void xoathongtinduongpho()
         {
-            Console.WriteLine("Nhập mã khachhang cần xóa "); // sai luôn
+            Console.WriteLine("Nhập mã khachhang cần xóa ");
             var makhachhang = Console.ReadLine();
             var index = -1;
             for (int i = 0; i < _duongPhos.Count; i++)
